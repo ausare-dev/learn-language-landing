@@ -43,7 +43,7 @@ const Header = () => {
 						</a>
 					</li>
 				</ul>
-				<button>Lets Talk</button>
+				<button className={styles['header__button-ref']}>Lets Talk</button>
 				<button
 					className={styles.header__button}
 					onClick={() => setSideBarToggle(state => !state)}
