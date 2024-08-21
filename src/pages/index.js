@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react"
+import Hero from "@/components/Hero/Hero"
 
 const Home = () => {
-	return <div>Home</div>; // все компоненты сливать сюда
-};
+  return (
+    <div>
+      <Hero />
+    </div>
+  ) // все компоненты сливать сюда
+}
 
-export default Home;
+export default Home
