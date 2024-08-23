@@ -11,6 +11,7 @@ function Skills() {
             <SkillsBlock
               img='/image/skill-1.png'
               title='Speaking'
+              className='first'
             >
               Improve your English skills and confidence. Live classes and
               interactive lessons online. 20% extra free for a limited time only
@@ -22,7 +23,7 @@ function Skills() {
             </SkillsBlock>
             <SkillsBlock
               img='/image/skill-2.png'
-              title='Speaking'
+              title='Writing'
             >
               One of the most important and extensive areas of natural science,
               the science that studies substances, also their composition
@@ -37,6 +38,7 @@ function Skills() {
             <SkillsBlock
               img='/image/skill-4.png'
               title='Listening'
+              className='invert'
             >
               Here you can find activities to practise your listening skills.
               Listening will help you to improve your understanding

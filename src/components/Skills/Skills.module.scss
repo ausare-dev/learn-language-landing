@@ -2,6 +2,7 @@
 @import "../../styles/breakpoints.scss";
 
 .skills {
+  margin-bottom: 52px;
   &__title {
     margin-top: 51px;
     margin-bottom: 40px;
@@ -15,5 +16,44 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 21px;
+  }
+}
+
+@media screen and (min-width: $table) {
+  .skills {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 33%);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      & > *:nth-child(1) {
+        grid-area: 1 / 1 / 4 / 2;
+      }
+      & > *:nth-child(2) {
+        grid-area: 1 / 2 / 3 / 3;
+      }
+      & > *:nth-child(3) {
+        grid-area: 1 / 3 / 3 / 4;
+      }
+      & > *:nth-child(4) {
+        grid-area: 3 / 2 / 4 / 4;
+      }
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .skills {
+    margin-bottom: 170px;
+    &__title {
+      font-size: 48px;
+    }
+    &__items {
+      grid-template-rows: repeat(3, 40%);
+    }
   }
 }
