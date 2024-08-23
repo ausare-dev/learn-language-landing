@@ -87,7 +87,7 @@
     padding: 35px 25px 10px 25px;
     &__title {
       font-size: 30px;
-      line-height: 50px;
+      line-height: 70px;
     }
     &__text {
       padding: 0 20px;
@@ -107,6 +107,12 @@
     }
     .skillsBlock__img {
       margin: 0;
+    }
+  }
+
+  .first {
+    .skillsBlock__title {
+      line-height: 40px;
     }
   }
 }
