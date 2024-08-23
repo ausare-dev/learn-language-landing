@@ -48,8 +48,9 @@
 
 @media screen and (min-width: $desktop) {
   .skills {
-    margin-bottom: 170px;
+    margin-bottom: 270px;
     &__title {
+      margin-top: 110px;
       font-size: 48px;
     }
     &__items {
