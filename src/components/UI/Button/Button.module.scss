@@ -16,17 +16,11 @@
 }
 
 .outlined {
-  background-color: none;
+  background: none;
   border: 2px solid $color-dark-blue;
   color: $color-black;
 
   &:hover {
     border: 2px solid $color-black;
   }
-}
-
-.left {
-  width: 178px;
-  padding: 14px 40px;
-  font-size: 14px;
 }

@@ -18,7 +18,7 @@ const Hero = () => {
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <Button buttonType='filled'>Get started</Button>
+            <Button>Get started</Button>
           </div>
           <div className={Style.right}>
             <img
