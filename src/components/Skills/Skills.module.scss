@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.skills {
+  &__title {
+    margin-top: 51px;
+    margin-bottom: 40px;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 21px;
+  }
+}

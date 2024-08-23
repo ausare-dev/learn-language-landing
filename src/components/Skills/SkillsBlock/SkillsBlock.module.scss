@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.skillsBlock {
+  background-color: $color-light-gray;
+  border-radius: 5px;
+  padding: 8px 16px 38px 16px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  &__desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: $color-gray-dark;
+  }
+  &__button {
+    padding: 14px 43px;
+    margin-top: 40px;
+  }
+}
