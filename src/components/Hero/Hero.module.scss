@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: 1368px) {
+@media (min-width: $desktop) {
   .hero {
     .left {
       button {
