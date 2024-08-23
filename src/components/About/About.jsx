@@ -27,13 +27,13 @@ const About = () => {
 							</li>
 							<li className={styles['about-list__item']}>
 								<h3 className={styles['about-list__title']}>
-									<CountUp end={18} duration={1} enableScrollSpy />
+									<CountUp end={18} duration={2} enableScrollSpy />
 								</h3>
 								<p className={styles['about-list__text']}>Teachers</p>
 							</li>
 							<li className={styles['about-list__item']}>
 								<h3 className={styles['about-list__title']}>
-									<CountUp end={6} duration={1} enableScrollSpy />
+									<CountUp end={6} duration={3} enableScrollSpy />
 								</h3>
 								<p className={styles['about-list__text']}>Foreign languages</p>
 							</li>
