@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.scss';
+import CountUp from 'react-countup';
 
 const About = () => {
 	return (
@@ -19,15 +20,21 @@ const About = () => {
 						</p>
 						<ul className={`${styles.about__list} ${styles['about-list']}`}>
 							<li className={styles['about-list__item']}>
-								<h3 className={styles['about-list__title']}>800</h3>
+								<h3 className={styles['about-list__title']}>
+									<CountUp end={800} duration={1} enableScrollSpy />
+								</h3>
 								<p className={styles['about-list__text']}>Pupils</p>
 							</li>
 							<li className={styles['about-list__item']}>
-								<h3 className={styles['about-list__title']}>18</h3>
+								<h3 className={styles['about-list__title']}>
+									<CountUp end={18} duration={1} enableScrollSpy />
+								</h3>
 								<p className={styles['about-list__text']}>Teachers</p>
 							</li>
 							<li className={styles['about-list__item']}>
-								<h3 className={styles['about-list__title']}>6</h3>
+								<h3 className={styles['about-list__title']}>
+									<CountUp end={6} duration={1} enableScrollSpy />
+								</h3>
 								<p className={styles['about-list__text']}>Foreign languages</p>
 							</li>
 						</ul>
