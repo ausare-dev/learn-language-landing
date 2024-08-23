@@ -10,8 +10,7 @@ const Hero = () => {
           <div className={Style.left}>
             <h1 className={Style.hero__title}>
               Learn <br className={Style.table} /> Any
-              <br className={Style.mobile} />
-              Foreign
+              <br className={Style.mobile} /> Foreign
               <br className={Style.table} /> Language
             </h1>
             <p className={Style.hero__text}>
