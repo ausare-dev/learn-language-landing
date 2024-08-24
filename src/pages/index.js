@@ -3,6 +3,7 @@ import Hero from "@/components/Hero/Hero"
 import Skills from "@/components/Skills/Skills"
 import About from "@/components/About/About"
 import React from "react"
+import Pricing from "@/components/Pricing/Pricing"
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Skills />
       <About />
+      <Pricing />
     </div>
   ) // все компоненты сливать сюда
 }

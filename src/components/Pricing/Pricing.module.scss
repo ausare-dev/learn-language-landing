@@ -1,0 +1,173 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/variables.scss';
+
+.pricing {
+	padding-top: 40px;
+	padding-bottom: 100px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 75px;
+		@media screen and (min-width: $table) {
+			gap: 50px;
+		}
+		@media screen and (min-width: $desktop) {
+			gap: 57px;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 600;
+		color: $color-black;
+		@media screen and (min-width: $table) {
+			font-size: 30px;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 48px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+		@media screen and (min-width: $table) {
+			flex-direction: row;
+			gap: 36px;
+		}
+		@media screen and (min-width: $desktop) {
+			gap: 44px;
+		}
+	}
+}
+
+.pricing-list {
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media screen and (min-width: $table) {
+			justify-content: end;
+			align-items: start;
+			width: 210px;
+			height: 444px;
+		}
+		@media screen and (min-width: $desktop) {
+			width: 427px;
+			height: 582px;
+		}
+	}
+
+	&__img {
+		width: 248px;
+		margin-bottom: 15px;
+		@media screen and (min-width: $table) {
+			width: 200px;
+		}
+		@media screen and (min-width: $desktop) {
+			width: 350px;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		color: $color-black;
+		margin-bottom: 17px;
+		@media screen and (min-width: $table) {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 30px;
+			margin-bottom: 19px;
+		}
+		&--two {
+			@media screen and (min-width: $table) {
+				padding-bottom: 15px;
+			}
+			@media screen and (min-width: $desktop) {
+				padding-bottom: 5px;
+			}
+		}
+		&--three {
+			@media screen and (min-width: $table) {
+				padding-bottom: 15px;
+			}
+			@media screen and (min-width: $desktop) {
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 13px;
+		color: $color-gray-dark;
+		text-align: center;
+		padding-bottom: 30px;
+		@media screen and (min-width: $table) {
+			text-align: start;
+			font-size: 14px;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 20px;
+		}
+		&--two {
+			@media screen and (min-width: $table) {
+				padding-bottom: 50px;
+			}
+			@media screen and (min-width: $desktop) {
+			}
+		}
+		&--three {
+			@media screen and (min-width: $table) {
+				padding-bottom: 50px;
+			}
+			@media screen and (min-width: $desktop) {
+			}
+		}
+	}
+}
+
+.price-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	height: 37px;
+	border-radius: 5px;
+	width: 170px;
+	background-color: $color-light-gray-alt;
+	@media screen and (min-width: $table) {
+		height: 45px;
+		width: 205px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 240px;
+	}
+	&__price {
+		font-size: 18px;
+		color: $color-dark-blue;
+		@media screen and (min-width: $table) {
+			font-size: 22px;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 30px;
+		}
+	}
+
+	&__length {
+		font-size: 14px;
+		color: $color-muted-blue;
+		@media screen and (min-width: $table) {
+			font-size: 16px;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 18px;
+		}
+	}
+}
