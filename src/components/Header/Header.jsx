@@ -74,7 +74,10 @@ const Header = () => {
         >
           <IconSidebar />
         </button>
-        {sideBarToggle && <Sidebar setSideBarToggle={setSideBarToggle} />}
+        <Sidebar
+          sideBarToggle={sideBarToggle}
+          setSideBarToggle={setSideBarToggle}
+        />
       </div>
     </header>
   )
