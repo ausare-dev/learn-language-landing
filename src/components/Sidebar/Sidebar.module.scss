@@ -7,15 +7,24 @@
 	width: 100%;
 }
 .sidebar {
+	z-index: 99;
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: -100%;
+	transition: right 1s ease;
 	background-color: $color-white;
 	height: 100%;
 	width: 100%;
+	&--active {
+		right: 0;
+	}
 	@media screen and (min-width: $table) {
 		padding-left: 30px;
 		width: 50%;
+	}
+	@media screen and (min-width: $desktop) {
+		display: none;
 	}
 	&__container {
 		position: relative;
@@ -59,5 +68,9 @@
 		color: $color-black;
 		font-size: 22px;
 		font-weight: 500;
+	}
+
+	&__button-ref {
+		padding: 10px 40px;
 	}
 }

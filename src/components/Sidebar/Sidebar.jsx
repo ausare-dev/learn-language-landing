@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Sidebar.module.scss';
 import IconSidebarClose from '../icons/IconSidebarClose';
+import Button from '../UI/Button/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Sidebar = ({ setSideBarToggle }) => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
-		<div className={styles.sidebar}>
+		<div className={styles.sidebar} data-aos='fade-right'>
 			<div className={`${styles.sidebar__container} container`}>
 				<div className={styles.sidebar__header}>
 					<a href='./' className={styles.sidebar__title}>
@@ -50,7 +56,9 @@ const Sidebar = ({ setSideBarToggle }) => {
 						</a>
 					</li>
 				</ul>
-				<button>Lets Talk</button>
+				<Button buttonType='outlined' className={styles['sidebar__button-ref']}>
+					Lets Talk
+				</Button>
 			</div>
 		</div>
 	);
