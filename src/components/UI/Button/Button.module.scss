@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  border-radius: 5px;
+  color: $color-white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filled {
+  background-color: $color-dark-blue;
+  &:hover {
+    background-color: $color-black;
+  }
+}
+
+.outlined {
+  background: none;
+  border: 2px solid $color-dark-blue;
+  color: $color-black;
+
+  &:hover {
+    border: 2px solid $color-black;
+  }
+}

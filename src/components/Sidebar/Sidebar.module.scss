@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+.line {
+  display: block;
+  background-color: $color-gray-dark;
+  height: 1px;
+  width: 100%;
+}
+.sidebar {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: all 1s ease;
+  background-color: $color-white;
+  height: 100%;
+  width: 100%;
+  &--active {
+    left: 0;
+  }
+  @media screen and (min-width: $table) {
+    padding-left: 30px;
+    width: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+  &__container {
+    position: relative;
+    @media screen and (min-width: $table) {
+      width: 430px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    color: $color-black;
+    @media screen and (min-width: $table) {
+      font-size: 30px;
+    }
+    &--alt {
+      color: $color-gray-dark;
+    }
+  }
+  &__list {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__button-ref {
+    padding: 10px 40px;
+  }
+}
