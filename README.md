@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Learn Language Landing
+
+<img src="demo.png" width="100%" height="auto" />
+
+### Описание
+
+Лендинг услуг для изучения иностранных языков. Сделан совместно с https://github.com/Alex16992
+
+### Особенности
+
+- Адаптивная верстка
 
 ## Getting Started
 
